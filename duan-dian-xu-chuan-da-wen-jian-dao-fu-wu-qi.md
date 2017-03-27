@@ -2,7 +2,7 @@
 
 ## service Auth \(dittoserver/authenticate/service.proto\)
 
-| 处理登录验证: 相当于oauth参数，grant\_type=password&client\_id=chitsmarttbox&cient\_secret=dkjfV\_23T&username=234234993&password=123456aA |
+| 处理登录验证: 相当于oauth v2方法，/v2/oauth?grant\_type=password&client\_id=chitsmarttbox&cient\_secret=dkjfV\_23T&username=234234993&password=123456aA |
 | :--- |
 
 
