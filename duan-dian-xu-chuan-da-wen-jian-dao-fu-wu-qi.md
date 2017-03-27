@@ -10,19 +10,22 @@
 | :--- | :--- | :--- | :--- |
 | Authenticate | AuthenticateRequest | AuthenticateResponse | 处理登录验证: |
 
-1. Message AuthenticateRequest
-   | Field | Description | Type |
-   | :--- | :--- | :--- |
-   | client\_id | 如百度api需要的apikey | String |
-   | client\_secret | 如百度api需要的apikeysecret | String |
-   | username | 如tbox终端编号：234234993 | String |
-   | password | 如tbox终端密码：123456aA | String |
-2. Message AuthenticateResponse
-   | Fileld | Description | Type |
-   | :--- | :--- | :--- |
-   | access\_token | e.g. "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNDQyNm...wcXrS5yGtUoewAKqoqL5JhIQ109s1FMNopL\_50HR\_t4" | String in JWT format with claims:       sub: user\_uuid,, client: client\_id |
-   | expires\_in | e.g. 239200 | long |
-   | tokey\_type | e.g. "Bearer" | String |
+Message AuthenticateRequest
+
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| client\_id | 如百度api需要的apikey | String |
+| client\_secret | 如百度api需要的apikeysecret | String |
+| username | 如tbox终端编号：234234993 | String |
+| password | 如tbox终端密码：123456aA | String |
+
+Message AuthenticateResponse
+
+| Fileld | Description | Type |
+| :--- | :--- | :--- |
+| access\_token | e.g. "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNDQyNm...wcXrS5yGtUoewAKqoqL5JhIQ109s1FMNopL\_50HR\_t4" | String in JWT format with claims:       sub: user\_uuid,, client: client\_id |
+| expires\_in | e.g. 239200 | long |
+| tokey\_type | e.g. "Bearer" | String |
 
 ```js
 service DittoAuthService {
