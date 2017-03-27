@@ -195,7 +195,7 @@ service DittoFileService {
         int32 block_size = 3;
         string md5 = 4;
         Status status = 5;
-        byte[] block = 6;
+        bytes block = 6;
     }
 
     message UploadFileblockRequest{
