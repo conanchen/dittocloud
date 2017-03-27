@@ -30,21 +30,21 @@ service DittoAuthService {
     //if the client's users exceed MAX_USERS or password not matched
     (1) rpc Authenticate(AuthenticateRequest) returns AuthenticateResponse{
     }
-    
+
     message AuthenticateRequest{
         string client_id = 1;
         string client_secret = 2;
         string username = 3;
         string password = 4;
     }
-    
+
     message AuthenticateResponse {
         string access_token = 1;
         int64 expires_in = 2;
         string refresh_token =3;
         string token_type = 4;       
     }
-    
+
     其中sccess_token是通过JWT方式编码，其中主要内容Claims由以下组成
     {
         "iss" : "http://www.dddd.com",
