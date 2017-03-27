@@ -23,7 +23,7 @@ Message AuthenticateResponse
 
 | Fileld | Description | Type |
 | :--- | :--- | :--- |
-| access\_token | e.g. "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNDQyNm...wcXrS5yGtUoewAKqoqL5JhIQ109s1FMNopL\_50HR\_t4" | String in JWT format with claims:       sub: user\_uuid,, client: client\_id |
+| access\_token | e.g. "exsdfiVsi.eyJvhdVUslsiVGS" | String in JWT format with claims:       sub: user\_uuid,, client: client\_id |
 | expires\_in | e.g. 239200 | long |
 | tokey\_type | e.g. "Bearer" | String |
 
