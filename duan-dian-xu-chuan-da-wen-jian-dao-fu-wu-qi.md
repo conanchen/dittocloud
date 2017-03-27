@@ -60,10 +60,6 @@ service DittoAuthService {
 
 ## service Upload \(dittoserver/fileupload/service.proto\)
 
-|  |
-| :--- |
-
-
 | RPC Method | Request Type | Response Type | Desc |
 | :--- | :--- | :--- | :--- |
 | CreateFile | CreateFileRequest | DittoFile | 在服务端创建文件 |
